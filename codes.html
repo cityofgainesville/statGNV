@@ -19,36 +19,40 @@
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html"><h4 style="font-weight: bolder; font-color: white;">statGNV</h4></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <a class="navbar-brand" href="index-test-1.html"><h4 style="font-weight: bolder; font-color: white;">statGNV</h4></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="gfr.html">Fire Rescue</a>
+  <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+	  <li class="nav-item">
+        <a class="nav-link" target="_blank" href="http://data.cityofgainesville.org/">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="311.html">311 Service Requests</a>
+	  <li class="nav-item">
+        <a class="nav-link" target="_blank" href="#">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="rts.html">Regional Transit System</a>
+	  <li class="nav-item">
+        <a class="nav-link" target="_blank" href="#">Tutorials</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="crime.html">Crime Incidents</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="codes.html">Code Complaints</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="crashes.html">Traffic Crashes</a>
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Explore Dashboards
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="gfr.html">Fire Responses</a>
+          <a class="dropdown-item" href="311.html">Service Requests</a>
+          <a class="dropdown-item active" href="codes.html">Code Complaints</a>
+		  <a class="dropdown-item" href="crashes.html">Traffic Crashes</a>
+		  <a class="dropdown-item" href="rts.html">Transit Ridership</a>
+		  <a class="dropdown-item" href="crime.html">Crime Incidents</a>
+        </div>
       </li>
     </ul>
   </div>
 </nav>
 
 <div class="jumbotron jumbotron-fluid bg-transparent text-center">
-    <h1 class="display-4" text-centered>Code Complaints &amp; Violations Dashboard</h1>
+    <h1 class="display-4" text-centered>Code Complaints &amp; Violations</h1>
     <br>
     <!--hr class="my-4"-->
     <p>Use slider to filter by date. Filter by type and/or month by clicking on the bar graph and/or line graph. Use ctrl + click to select multiple.</p>
@@ -63,15 +67,17 @@
 View source data: <a href="https://data.cityofgainesville.org/Better-Future/Code-Complaints-Violations/vu9p-a5f7" class="alert-link">Code Complaints &amp; Violations</a>.
 </div>
 <br>
-<nav class="navbar-dark bg-dark text-center"  
+<footer class="text-muted bg-dark">
+	  <br>
+      <div class="container">
+		<a href="http://cityofgainesville.org"><img src="images/wordmark.png" alt="City of Gainesville wordmark"></a>
+		<br>
+		<br>
+		<p class="float-right"><a class="text-light" href="http://stat.cityofgainesville.org">statGNV</a></p>
+        <p><a class="text-light" href="http://data.cityofgainesville.org">dataGNV</a> | <a class="text-light" href="http://spending.cityofgainesville.org">spendingGNV</a> | <a class="text-light" href="http://budget.cityofgainesville.org">budgetGNV</a></p>
+      </div>
 	<br>
-	<br>
-  	 <a href="https://cityofgainesville.org">
-		<img src="wordmark.png" class="img-fluid" alt="Responsive image">
-	 </a>
-	<br>
-	<br>
-</nav>
+    </footer>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.3.1.min.js"></script>

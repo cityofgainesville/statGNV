@@ -17,10 +17,9 @@
       height: 20rem;
       padding-top: 6rem;
     }
-
 </style>
 <body>
-
+<div class="bg-light">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="index-test-1.html"><h4 style="font-weight: bolder; font-color: white;">statGNV</h4></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,27 +27,27 @@
   </button>
   <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+	  <li class="nav-item active">
+        <a class="nav-link" target="_blank" href="http://data.cityofgainesville.org/">Home</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" target="_blank" href="#">About</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" target="_blank" href="#">Tutorials</a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Explore Dashboards
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="gfr.html">Fire/Rescue Responses</a>
-          <a class="dropdown-item" href="311.html">311 Service Requests (myGNV)</a>
-          <a class="dropdown-item" href="codes.html">Code Complaints &amp; Violations</a>
+          <a class="dropdown-item" href="gfr.html">Fire Responses</a>
+          <a class="dropdown-item" href="311.html">Service Requests</a>
+          <a class="dropdown-item" href="codes.html">Code Complaints</a>
 		  <a class="dropdown-item" href="crashes.html">Traffic Crashes</a>
-		  <a class="dropdown-item" href="rts.html">RTS Ridership</a>
+		  <a class="dropdown-item" href="rts.html">Transit Ridership</a>
 		  <a class="dropdown-item" href="crime.html">Crime Incidents</a>
         </div>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" target="_blank" href="http://data.cityofgainesville.org/">dataGNV</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" target="_blank" href="http://budget.cityofgainesville.org">budgetGNV</a>
-      </li>
-	  <li class="nav-item">
-        <a class="nav-link" target="_blank" href="http://spending.cityofgainesville.org">spendingGNV</a>
       </li>
     </ul>
   </div>
@@ -64,17 +63,17 @@
   		</div>
 		<div class="col-sm">
     			<div class="card text-center">
-	  			<a href="rts.html">
+	  			<a class="btn-light" href="rts.html">
          			 <!--img class="card-img-top" src="images/statGNV.png" alt="Card image cap"-->
 						<div class="card-body">
 						<h1 class="card-text"><img src="images/noun_Bus_2491078.png" height="50rem" alt="bus icon"></h1>
-						<p class="card-text">RTS Ridership</p></div>
+						<p class="card-text">Transit Ridership</p></div>
 				</a>
    				</div>
   		</div>
     		<div class="col-sm">
     			<div class="card text-center">
-				<a href="codes.html">
+				<a class="btn-light" href="codes.html">
 	  			<!--img class="card-img-top" src="images/statGNV.png" alt="Card image cap"-->
 						<div class="card-body">
 						<h1 class="card-text"><img src="images/noun_complaint_202590.png" height="50rem" alt="complaint icon"></h1>
@@ -84,17 +83,17 @@
   		</div>
   		<div class="col-sm">
     			<div class="card text-center">
-	  			<a href="gfr.html">
+	  			<a class="btn-light" href="gfr.html">
           		<!--img class="card-img-top" src="images/statGNV.png" alt="Card image cap"-->
 						<div class="card-body">
 						<h1 class="card-text"><img src="images/noun_Police_99170.png" height="50rem" alt="officer icon"></h1>
-						<p class="card-text">GFR Responses</p></div>
+						<p class="card-text">Fire Responses</p></div>
 	  			</a>
     			</div>
 		</div>
   		<div class="col-sm">
     			<div class="card text-center">
-	  			<a href="311.html">
+	  			<a class="btn-light" href="311.html">
 				<!--img class="card-img-top" src="images/statGNV.png" alt="Card image cap"-->
 						<div class="card-body">
 						<h1 class="card-text"><img src="images/noun_service_2435482.png" height="50rem" alt="tools icon"></h1>
@@ -111,7 +110,7 @@
   		</div>
 		<div class="col-sm">
     			<div class="card text-center">
-	  			<a href="">
+	  			<a class="btn-light" href="">
          		<!--img class="card-img-top" src="images/statGNV.png" alt="Card image cap"-->
 						<div class="card-body">
 						<h1 class="card-text"><img src="images/noun_utility_2628302.png" height="50rem" alt="utility bill icon"></h1>
@@ -121,7 +120,7 @@
   		</div>
     		<div class="col-sm">
     			<div class="card text-center">
-	  			<a href="crashes.html">
+	  			<a class="btn-light" href="crashes.html">
           		<!--img class="card-img-top" src="images/statGNV.png" alt="Card image cap"-->
 						<div class="card-body">
 						<h1 class="card-text"><img src="images/noun_Crash_2525877.png" height="50rem" alt="car crash icon"></h1>
@@ -131,7 +130,7 @@
   		</div>
   		<div class="col-sm">
     			<div class="card text-center">
-	  			<a href="crime.html">
+	  			<a class="btn-light" href="crime.html">
           			<!--img class="card-img-top" src="images/statGNV.png" alt="Card image cap"-->
 						<div class="card-body">
 						<h1 class="card-text"><img src="images/noun_crime.png" height="50rem" alt="crime icon"></h1>
@@ -141,7 +140,7 @@
 		</div>
   		<div class="col-sm">
     			<!--div class="card text-center">
-	  			<a href="">
+	  			<a class="btn-light" href="">
           			<img class="card-img-top" src="" alt="Card image cap">
 	  			</a>
     			</div-->
@@ -150,15 +149,18 @@
   		</div>
 </div>
 <br>
-<nav class="navbar-dark bg-dark text-center"  
+</div>
+<footer class="text-muted bg-dark">
+	  <br>
+      <div class="container">
+		<a href="http://cityofgainesville.org"><img src="images/wordmark.png" alt="City of Gainesville wordmark"></a>
+		<br>
+		<br>
+		<p class="float-right"><a class="text-light" href="http://stat.cityofgainesville.org">statGNV</a></p>
+        <p><a class="text-light" href="http://data.cityofgainesville.org">dataGNV</a> | <a class="text-light" href="http://spending.cityofgainesville.org">spendingGNV</a> | <a class="text-light" href="http://budget.cityofgainesville.org">budgetGNV</a></p>
+      </div>
 	<br>
-	<br>
-  	 <a href="https://cityofgainesville.org">
-		<img src="images/wordmark.png" class="img-fluid" alt="Responsive image">
-	 </a>
-	<br>
-	<br>
-</nav>
+    </footer>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.3.1.min.js"></script>
