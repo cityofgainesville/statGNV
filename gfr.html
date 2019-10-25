@@ -39,32 +39,49 @@
           Explore Dashboards
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item active" href="gfr.html">Fire Responses</a>
-          <a class="dropdown-item" href="311.html">Service Requests</a>
-          <a class="dropdown-item" href="codes.html">Code Complaints</a>
-		  <a class="dropdown-item" href="crashes.html">Traffic Crashes</a>
-		  <a class="dropdown-item" href="rts.html">Transit Ridership</a>
-		  <a class="dropdown-item" href="crime.html">Crime Incidents</a>
+          	<a class="dropdown-item" href="codes.html">Code Violations</a>
+			<a class="dropdown-item" href="crime.html">Crime Incidents</a>
+			<a class="dropdown-item active" href="gfr.html">Fire Responses</a>
+			<a class="dropdown-item" href="crashes.html">Traffic Crashes</a>
+			<a class="dropdown-item" href="rts.html">Transit Ridership</a>
+          	<a class="dropdown-item" href="311.html">Service Requests</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
-
-<div class="jumbotron jumbotron-fluid bg-transparent text-center">
-    <h1 class="display-4" text-centered>Fire/Rescue Responses</h1>
-    <br>
-    <!--hr class="my-4"-->
-    <p>Filter by month and/or year by clicking on the bar graphs. Use ctrl + click to select multiple.</p>
+<br> 
+<div class="text-center">
+<h1>Fire Responses</h1>	
+<div class="btn-group" role="group" aria-label="dashboard or map">
+	<button id="about-button" class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about">About</button>
+	<button id="dash-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#dashboard">Dashboard</button>
+  	<button id="map-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#map">Map</button>
+</div> 
+<div class="collapse" id="about">
+	  <div class="container text-center" style="width: 80%">
+			<p><strong>About: </strong>This dashboard... Scroll to the bottom of the page to find a link to the raw data available on dataGNV, the City of Gainesville's Open Data Portal.</p>
+		  	<p><strong>How to use: </strong>The dashboard and map are interactive. Use the slider on top to filter by date range. You can also filter fire responses by Month Over Time, by Type of Response, or Year by clicking on the bar graphs or line graph. To select multiple, use ctrl + click on Windows or cmd + click on Mac. Click again to de-select. Hovering over the graphs will give you more information about the data.</p>
+	  </div>
 </div>
-
-<!-- Tableau embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
-<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1571838695859' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FireResponseDashboard_15688198908060&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1571838695859');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1100px';vizElement.style.height='1027px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>	  
-<!-- Tableau embed end -->
-
+<div id="dashboard">
+			  <div class="container-fluid text-center">
+					<!-- Tableau embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
+					<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572033764678' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;Dashboard10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FireResponseDashboard_15688198908060&#47;Dashboard10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;Dashboard10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572033764678');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>	  
+					<!-- Tableau embed end -->
+			  </div>
+</div>
+<div style="display: none" id="map">
+			<div class="container-fluid text-center">
+				<!-- Tableau Map embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
+				<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572033888520' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572033888520');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+				<!-- Tableau Map embed end. -->
+			</div>
+</div>
+</div>
 <br>
-<div class="alert alert-dark">
-View source data: <a href="https://data.cityofgainesville.org/Community-Model/Fire-Rescue-Responses/s7de-wj39" class="alert-link">Fire Rescue Responses</a>.
+<div class="container" style="width: 80%">
+View source data: <a href="https://data.cityofgainesville.org/Community-Model/Fire-Rescue-Responses/s7de-wj39" class="btn-link">Fire Rescue Responses</a>.
 </div>
 <br>
 <footer class="text-muted bg-dark">
@@ -78,6 +95,9 @@ View source data: <a href="https://data.cityofgainesville.org/Community-Model/Fi
       </div>
 	<br>
     </footer>
+
+	<!-- main.js-->
+	<script src="./main.js"></script>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.3.1.min.js"></script>

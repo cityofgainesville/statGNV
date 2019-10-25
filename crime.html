@@ -39,32 +39,49 @@
           Explore Dashboards
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="gfr.html">Fire Responses</a>
-          <a class="dropdown-item" href="311.html">Service Requests</a>
-          <a class="dropdown-item" href="codes.html">Code Complaints</a>
-		  <a class="dropdown-item" href="crashes.html">Traffic Crashes</a>
-		  <a class="dropdown-item" href="rts.html">Transit Ridership</a>
-		  <a class="dropdown-item active" href="crime.html">Crime Incidents</a>
+          	<a class="dropdown-item" href="codes.html">Code Violations</a>
+			<a class="dropdown-item active" href="crime.html">Crime Incidents</a>
+			<a class="dropdown-item" href="gfr.html">Fire Responses</a>
+			<a class="dropdown-item" href="crashes.html">Traffic Crashes</a>
+			<a class="dropdown-item" href="rts.html">Transit Ridership</a>
+          	<a class="dropdown-item" href="311.html">Service Requests</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
-
-<div class="jumbotron jumbotron-fluid bg-transparent text-center">
-    <h1 class="display-4" text-centered>Crime Incidents</h1>
-    <br>
-    <!--hr class="my-4"-->
-    <p>Use slider to filter by date. Filter by incident type by clicking on the bar graph. Use ctrl + click to select multiple.</p>
+<br> 
+<div class="text-center">
+<h1>Crime Incidents</h1>	
+<div class="btn-group" role="group" aria-label="dashboard or map">
+	<button id="about-button" class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about">About</button>
+	<button id="dash-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#dashboard">Dashboard</button>
+  	<button id="map-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#map">Map</button>
+</div> 
+<div class="collapse" id="about">
+	  <div class="container text-center" style="width: 80%">
+			<p><strong>About: </strong>This dashboard... Scroll to the bottom of the page to find a link to the raw data available on dataGNV, the City of Gainesville's Open Data Portal.</p>
+		  	<p><strong>How to use: </strong>The dashboard and map are interactive. Use the slider on top to filter by date range. You can also filter crime incidents by Month Over Time, by  Type, or Hour of Day by clicking on the bar graphs or line graph. To select multiple, use ctrl + click on Windows or cmd + click on Mac. Click again to de-select. Hovering over the graphs will give you more information about the data.</p>
+	  </div>
 </div>
-
-<!-- Tableau embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
-<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1571839463201' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeIncidentsDashboard_15686420110670&#47;CrimeIncidentsDashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CrimeIncidentsDashboard_15686420110670&#47;CrimeIncidentsDashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeIncidentsDashboard_15686420110670&#47;CrimeIncidentsDashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1571839463201');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-<!-- Tableau embed end. -->
-
+<div id="dashboard">
+			  <div class="container-fluid text-center">
+					<!-- Tableau embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
+					<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572034728559' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeIncidentsDashboard_15686420110670&#47;Dashboard3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;CrimeIncidentsDashboard_15686420110670&#47;Dashboard3?:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeIncidentsDashboard_15686420110670&#47;Dashboard3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572034728559');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='2377px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+					<!-- Tableau embed end. -->
+			  </div>
+</div>
+<div style="display: none" id="map">
+					<div class="container-fluid text-center">
+						<!-- Tableau Map embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
+						<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572034752087' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeIncidentsDashboard_15686420110670&#47;Dashboard4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CrimeIncidentsDashboard_15686420110670&#47;Dashboard4' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeIncidentsDashboard_15686420110670&#47;Dashboard4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572034752087');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+						<!-- Tableau Map embed end. -->
+					</div>
+</div>
+</div>
 <br>
-<div class="alert alert-dark">
-View source data: <a href="https://data.cityofgainesville.org/Community-Model/Crime-Incidents/gvua-xt9q" class="alert-link">Crime Incidents</a>.
+<div class="container" style="width: 80%">
+View source data: <a href="https://data.cityofgainesville.org/Community-Model/Crime-Incidents/gvua-xt9q" class="btn-link">Crime Incidents</a>.
 </div>
 <br>
 <footer class="text-muted bg-dark">
@@ -78,7 +95,10 @@ View source data: <a href="https://data.cityofgainesville.org/Community-Model/Cr
       </div>
 	<br>
     </footer>
-
+	
+	<!-- main.js-->
+	<script src="./main.js"></script>
+	  
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 	<script src="js/jquery-3.3.1.min.js"></script>
 
