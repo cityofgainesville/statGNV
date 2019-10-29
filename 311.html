@@ -7,6 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	      
+	<!-- FontAwesome Kit -->
+	<script src="https://kit.fontawesome.com/7c02223738.js" crossorigin="anonymous"></script>
+
 
     <title>statGNV - 311</title>
   </head> 
@@ -29,10 +33,10 @@
         <a class="nav-link" href="index.html">Home</a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link disabled" href="#">About</a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link" href="#">Tutorials</a>
+        <a class="nav-link disabled" href="#">Tutorials</a>
       </li>
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -52,29 +56,28 @@
 </nav>
 <br> 
 <div class="text-center">
-<h1>Service Requests</h1>	
-<div class="btn-group" role="group" aria-label="dashboard or map">
-	<button id="about-button" class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about">About</button>
-	<button id="dash-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#dashboard">Dashboard</button>
-  	<button id="map-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#map">Map</button>
-</div> 
+<h1>Service Requests<button id="about-button" class="btn btn-lg" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about"> <i class="fal fa-info-circle"></i></button></h1>
 <div class="collapse" id="about">
 	  <div class="container text-center" style="width: 80%">
 			<p><strong>About: </strong>The City of Gainesville launched a 311 service requests system in 2015 to enable citizens to report non-emergency issues such as road repairs or obstructing trees. Community members can report issues through the myGNV app for iOS or Android or online at myGNV.org. Service requests are always submitted with a geo-location tag and might include a photo, description and other relevant information. This dashboard displays service requests submitted since the service launched in 2015 and they are summarized by commission district, request type and month. The map shows the currently open, aknowledged or recently closed requests, as well as all the archived requests (closed for more than 7 days before the last dashboard update.) Scroll to the bottom of the page to find a link to the raw data available on dataGNV, the City of Gainesville's Open Data Portal.</p>
 		  	<p><strong>How to use:</strong> The dashboard and map are interactive. Use the slider on top to filter by date range. You can also filter requests by Commission District, Request Type, or Month by clicking on the packed bubbles, bar graph or line graph. To select multiple, use ctrl + click on Windows or cmd + click on Mac. Click again to de-select. Hovering over the graphs will give you more information about the data.</p>
 	  </div>
 </div>
+<div class="btn-group" role="group" aria-label="dashboard or map">
+	<button id="dash-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#dashboard">Dashboard</button>
+  	<button id="map-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#map">Map</button>
+</div> 
 <div id="dashboard">
 			  <div class="container-fluid text-center">
 					<!-- Tableau Dashboard embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
-					<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572034631900' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;311Overview&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;311ServiceRequestsDashboard&#47;311Overview?:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;311Overview&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572034631900');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='827px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>  
+					<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572361977386' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;Dashboard&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='311ServiceRequestsDashboard&#47;Dashboard' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;Dashboard&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572361977386');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>  
 					<!-- Tableau Dashboard embed end. -->
 			  </div>
 </div>
 <div style="display: none" id="map">
 					<div class="container-fluid text-center">
 						<!-- Tableau Map embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
-						<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572034664219' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;MapofServiceRequests&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='views&#47;311ServiceRequestsDashboard&#47;MapofServiceRequests?:embed=y&amp;:display_count=y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;MapofServiceRequests&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572034664219');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+						<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572362029766' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;MapofServiceRequests&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='311ServiceRequestsDashboard&#47;MapofServiceRequests' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;MapofServiceRequests&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572362029766');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='627px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 						<!-- Tableau Map embed end. -->
 					</div>
 </div>
