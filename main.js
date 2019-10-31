@@ -1,4 +1,7 @@
 // JavaScript Document
+window.onload=function(){
+  document.getElementById("dash-button").click();
+};
 
 document.getElementById("dash-button").onclick = function() {
 	document.getElementById("map").style["display"] = "none";
