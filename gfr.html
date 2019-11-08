@@ -33,7 +33,7 @@
         <a class="nav-link" href="index.html">Home</a>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link disabled" href="#">About</a>
+        <a class="nav-link" href="about.html">About</a>
       </li>
 	  <li class="nav-item">
         <a class="nav-link disabled" href="#">Tutorials</a>
@@ -59,8 +59,9 @@
 <h1>Fire Responses<button id="about-button" class="btn btn-lg" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about"> <i class="fal fa-info-circle"></i></button></h1>	
 <div class="collapse" id="about">
 	  <div class="container text-left" style="width: 70%">
-			<p><strong>About: </strong>Data for this dashboard is provided by Gainesville Fire Rescue (GFR) and contains all responses dating back to January 2011. Responses are summarized by type, month and year.</p>
-		  	<p><strong>How to use: </strong>The dashboard and map are interactive. Use the slider on top to filter by date range. You can also filter fire responses by Month Over Time, by Type of Response, or Year by clicking on the bar graphs or line graph. To select multiple, use ctrl + click on Windows or cmd + click on Mac. Click again to de-select. Hovering over the graphs will give you more information about the data. Scroll to the bottom of the page to find a link to the raw data available on dataGNV, the City of Gainesville's Open Data Portal.</p>
+			<p><strong>Description: </strong>This dashboard shows emergency responses dating back to October 2011. It shows responses that are under the jurisdiction of Gainesville Fire Rescue. It shows responses by type, month, year and time of day. </p>
+		  	<p><strong>How to use: </strong>The dashboard and map are interactive. Use the slider on top to filter by date range. You can also filter responses by Month, Type of Response, or Year by clicking on the bar graphs or line graph. To select multiple, use Ctrl + click on Windows or Cmd + click on Mac. Click again to unselect. Hovering over the graphs will give you more information about the data. Scroll to the bottom of the page to find a link to the raw data available on dataGNV, the City of Gainesville's Open Data Portal.</p>
+		    <p><strong>Insights: </strong>Emergency medical responses make up the bulk of all the responses: more than 100,000 since 2011! Fire responses have seen a spike since March 2017. Most responses happen during weekday afternoons and weekend nights.</p>
 	  </div>
 </div>
 <div class="btn-group" role="group" aria-label="dashboard or map">
@@ -70,14 +71,14 @@
 <div id="dashboard">
 			  <div class="container-fluid text-center">
 					<!-- Tableau embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
-					<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572363362846' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;Dashboard10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FireResponseDashboard_15688198908060&#47;Dashboard10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;Dashboard10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572363362846');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>	  
+					<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1573245917464' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;Dashboard10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FireResponseDashboard_15688198908060&#47;Dashboard10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;Dashboard10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1573245917464');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='1227px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> 
 					<!-- Tableau embed end -->
 			  </div>
 </div>
 <div id="map">
 			<div class="container-fluid text-center">
 				<!-- Tableau Map embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
-				<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1572537305036' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1572537305036');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+				<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1573245950414' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;FireResponseDashboard_15688198908060&#47;EMSFireResponseHeatmap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1573245950414');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 				<!-- Tableau Map embed end. -->
 			</div>
 </div>
@@ -90,11 +91,32 @@ View source data: <a href="https://data.cityofgainesville.org/Community-Model/Fi
 <footer class="text-muted bg-dark">
 	  <br>
       <div class="container">
-		<a href="http://cityofgainesville.org"><img src="images/wordmark.png" alt="City of Gainesville wordmark"></a>
-		<br>
-		<br>
-		<p class="float-right"><a class="text-light" href="http://stat.cityofgainesville.org">statGNV</a></p>
-        <p><a class="text-light" target="_blank" href="http://data.cityofgainesville.org">dataGNV</a> | <a class="text-light" target="_blank" href="http://spending.cityofgainesville.org">spendingGNV</a> | <a class="text-light" target="_blank" href="http://budget.cityofgainesville.org">budgetGNV</a></p>
+		  <div class="row">
+    		<div class="col-sm text-left">
+				<p><a target="_blank" href="http://cityofgainesville.org"><img src="images/wordmark.png" alt="City of Gainesville wordmark"></a></p>
+				<p class="text-white">2019 City of Gainesville</p>
+    		</div>
+    		<div class="col-sm-2">
+				<div class="text-left">
+				<p class="text-light">openGNV Resources:
+				<br>• <a class="font-weight-light; text-light" target="_blank" href="http://data.cityofgainesville.org">dataGNV</a>
+				<br>
+				• <a class="font-weight-light; text-light" target="_blank" href="http://spending.cityofgainesville.org">spendingGNV</a>
+				<br>
+				• <a class="font-weight-light; text-light" target="_blank" href="http://budget.cityofgainesville.org">budgetGNV</a></p>
+    			</div>
+			</div>
+    		<div class="col-sm text-right">
+				<p class="font-weight-bold; text-light">City's social media channels:</p>
+      			<h3><a class="text-light" target="_blank" href="https://m.facebook.com/GainesvilleFL/?"><i class="fab fa-facebook"></i></a>
+				<span></span>
+				<a class="text-light" target="_blank" href="https://twitter.com/gainesvillegov?"><i class="fab fa-twitter"></i></a>
+				<span></span>
+				<a class="text-light" target="_blank" href="https://www.youtube.com/user/gainesvillepio?"><i class="fab fa-youtube"></i></a>
+				<span></span>
+				<a class="text-light" target="_blank" href="https://www.flickr.com/photos/gainesville/"><i class="fab fa-flickr"></i></a></h3>
+    		</div>
+  		  </div>
       </div>
 	<br>
     </footer>
