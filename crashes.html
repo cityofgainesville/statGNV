@@ -20,14 +20,28 @@
 	.center {
 	text-align: center;
 	}
+.bg-beta {
+	  background: #59B9DE;
+	}
+.bg-blue-cool-90 {
+	  background: #0F191C;
+	}
+	.navbar-dark {
+		background: #0F191C;
+	}
 </style>
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="index.html"><h4 style="font-weight: bolder; font-color: white;">statGNV</h4></a>
+<body>
+<nav class="container-fluid bg-beta" style="height: 1.7rem">
+  <span class="text-left" style="color: white">
+	  <p class="font-italic"><strong>statGNV Beta</strong> Feel free to <a href="mailto:designGNV@cityofgainesville.org" style="color: white; text-decoration: underline">e-mail us</a> if you have any suggestions.</p>
+  </span>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-blue-cool-90">
+  <a class="navbar-brand bg-blue-cool-90" href="index.html"><h4 style="font-weight: bolder; font-color: white;">statGNV</h4></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse navbar-dark bg-blue-cool-90" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 	  <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
@@ -35,9 +49,9 @@
 	  <li class="nav-item">
         <a class="nav-link" href="about.html">About</a>
       </li>
-	  <li class="nav-item">
+	  <!--li class="nav-item">
         <a class="nav-link disabled" href="#">Tutorials</a>
-      </li>
+      </li-->
       <li class="nav-item dropdown active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Explore Dashboards
@@ -61,7 +75,7 @@
 	  <div class="container text-left" style="width: 70%">
 			<p><strong>Description: </strong>This dashboard shows traffic crashes dating back to January 2011. It only shows accidents that are under the jurisdiction of Gainesville Police Department. Data is 60 days or older from when accidents happened due to Florida Statutes 316.066.</p>
 		  	<p><strong>How to use: </strong>The dashboard and map are interactive. Use the slider on top to filter by date range. You can also filter traffic crashes by Month Over Time, by Month in general or Hour of Day by clicking on the bar graphs or line graph. To select many, use Ctrl + click on Windows or Cmd + click on Mac. Click again to unselect. Hovering over the graphs will give you more information about the data. Scroll to the bottom of the page to find a link to the raw data available on dataGNV, the City of Gainesville's Open Data Portal.</p>
-		    <p><strong>Insights: </strong>Traffic crashes are increasing. Almost 100 people have died on Gainesville's streets since 2011. The most dangerous time to be on the road is between Monday and Friday at 5pm. Last year the City adopted a <a target="_blank" href="https://gainesville.legistar.com/LegislationDetail.aspx?ID=3550625&GUID=8965C6BB-8A4B-4EC2-B173-A4CE750A807B">Vision Zero Resolution</a> to decrease traffic fatalities to 0 by 2040.</p>
+		    <!--p><strong>Insights: </strong>Traffic crashes are increasing. Almost 100 people have died on Gainesville's streets since 2011. The most dangerous time to be on the road is between Monday and Friday at 5pm. Last year the City adopted a <a target="_blank" href="https://gainesville.legistar.com/LegislationDetail.aspx?ID=3550625&GUID=8965C6BB-8A4B-4EC2-B173-A4CE750A807B">Vision Zero Resolution</a> to decrease traffic fatalities to 0 by 2040.</p-->
 	  </div>
 </div>
 <div class="btn-group" role="group" aria-label="dashboard or map">
@@ -87,12 +101,16 @@
 <div class="container" style="width: 80%">
 View source data: <a href="https://data.cityofgainesville.org/Community-Model/Traffic-Crashes/iecn-3sxx" class="btn-link">Traffic Crashes</a>.
 </div>
-<br><footer class="text-muted bg-dark">
+<br>
+<footer class="text-muted bg-blue-cool-90">
 	  <br>
       <div class="container">
 		  <div class="row">
     		<div class="col-sm text-left">
-				<p><a target="_blank" href="http://cityofgainesville.org"><img src="images/wordmark.png" alt="City of Gainesville wordmark"></a></p>
+				<!--p><a target="_blank" href="http://cityofgainesville.org"><img src="images/wordmark.png" alt="City of Gainesville wordmark"></a></p-->
+				<br>
+				<br>
+				<br>
 				<p class="text-white">2019 City of Gainesville</p>
     		</div>
     		<div class="col-sm-2">
@@ -107,7 +125,7 @@ View source data: <a href="https://data.cityofgainesville.org/Community-Model/Tr
 			</div>
     		<div class="col-sm text-right">
 				<p class="font-weight-bold; text-light">City's social media channels:</p>
-      			<h3><a class="text-light" target="_blank" href="https://m.facebook.com/GainesvilleFL/?"><i class="fab fa-facebook"></i></a>
+      			<h3><a class="text-light" target="_blank" href="https://facebook.com/GainesvilleFL/?"><i class="fab fa-facebook"></i></a>
 				<span></span>
 				<a class="text-light" target="_blank" href="https://twitter.com/gainesvillegov?"><i class="fab fa-twitter"></i></a>
 				<span></span>
