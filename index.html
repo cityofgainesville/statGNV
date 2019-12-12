@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+	<!-- This is the home page for statGNV. Most of the pages will look similar to this one so most explanatory comments were added to this page only. Use as reference. You can edit index-test.html to test how the homepage would look like wihtout needing to commit changes to this homepage until you are 100% confident.-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="data vizualization by the City of Gainesville" >
+    <meta name = "keywords" content="data, data vizualization, tableau,city of gainesville, gainesville, florida, statistics, local government, open data, transparency,gnv,statGNV">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<!-- FontAwesome Kit -->
+	<!-- Start FontAwesome Kit -->
 	<script src="https://kit.fontawesome.com/7c02223738.js" crossorigin="anonymous"></script>
-	 
-	<!-- Hotjar Tracking Code for stat.cityofgainesville.org -->
+	<!-- End FontAwesome Kit. -->
+
+	<!-- Start Hotjar Tracking Code for stat.cityofgainesville.org -->
 	<script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -22,8 +26,9 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
-	  
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
+	  <!-- End Hotjar tracking code. -->
+
+	  <!-- Start Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152821675-1"></script>
 	<script>
   window.dataLayer = window.dataLayer || [];
@@ -32,9 +37,11 @@
 
   gtag('config', 'UA-152821675-1');
 	</script>
-	  
+	  <!-- End Google site tag. -->
+
     <title>statGNV</title>
-  </head> 
+  </head>
+<!-- Start some CSS edits for the jumbotron (the hero image with the statGNV title) and the background for the header and footer following the city's color guidelines.-->
 <style>
 .jumbotron {
       background: #000 url('https://cityofgainesville.github.io/statgnv/images/home-dark.jpg') no-repeat center center;
@@ -52,12 +59,16 @@
 		background: #0F191C;
 	}
 </style>
+<!-- End CSS edits. -->
+
 <body>
+<!-- This is where the temporary blue bar for statGNV beta starts: -->
 <nav class="container-fluid bg-beta" style="height: 1.7rem">
   <span class="text-left" style="color: white">
 	  <p class="font-italic"><strong>statGNV Beta </strong><a href="mailto:designGNV@cityofgainesville.org" style="color: white; text-decoration: underline">Email us</a> with feedback.</p>
   </span>
 </nav>
+<!-- This is where the temporary blue bar ends and the site's navbar starts: -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-blue-cool-90">
   <a class="navbar-brand bg-blue-cool-90" href="index.html"><h4 style="font-weight: bolder; font-color: white;">statGNV</h4></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,12 +101,13 @@
     </ul>
   </div>
 </nav>
-
+<!-- This is where the site's navbar ends. -->
+<!-- This is where the jumbotron starts, the background image is added as a background in the CSS edits at the top of the document.-->
 <div class="jumbotron jumbotron-fluid text-center">
 	<h5 class="text-white">Explore Gainesville's data through charts and graphs</h5>
-	<h1 class="display-3 font-weight-bold text-white">statGNV</h1> 
+	<h1 class="display-3 font-weight-bold text-white">statGNV</h1>
 </div>
-
+<!-- This is where the jumbotron ends and the cards start. The cards are ordered in rows and columns. These rows and columns are inside a fluid container to make it mobile-friendly. Some cards are there but commented to make it easy to organize them in rows and columns. Just comment or uncomment them when you are ready to take them off or take them live. -->
 <div class="row container-fluid m-0">
     	<div class="col-sm">
   		</div>
@@ -243,6 +255,7 @@
       <div class="container">
 		  <div class="row">
     		<div class="col-sm text-left">
+				<!-- The city's wordmark was here but was removed when the City Manager decided to remove it. Just replace the wordmark on the images folder and update the file name under here if necessary. Then uncomment line under this one and the image should show on the website without any trouble. Keep the same dimensions as the existing wordmark on file and make sure it is in png format with the word Gainesville in white so that it contrasts with the navy blue backgorund. -->
 				<!--p><a target="_blank" href="http://cityofgainesville.org"><img src="images/wordmark.png" alt="City of Gainesville wordmark"></a></p-->
 				<br>
 				<br>
@@ -275,11 +288,11 @@
 	<br>
     </footer>
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/popper.min.js"></script> 
+	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.3.1.js"></script>
   </body>
 
