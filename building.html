@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="data vizualization by the City of Gainesville" >
-    <meta name = "keywords" content="data, data vizualization, tableau,city of gainesville, gainesville, florida, statistics, local government, open data, transparency,gnv,statGNV,311,mygnv">
+    <meta name = "keywords" content="data, data vizualization, tableau,city of gainesville, gainesville, florida, statistics, local government, open data, transparency,gnv,statGNV, permits, building, development">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,7 +26,7 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152821675-1"></script>
 	<script>
   window.dataLayer = window.dataLayer || [];
@@ -35,7 +36,8 @@
   gtag('config', 'UA-152821675-1');
 	</script>
 
-    <title>statGNV - 311 Service Requests</title>
+
+    <title>statGNV - Building Permits</title>
   </head>
   <body>
 
@@ -80,13 +82,13 @@
           Explore Dashboards
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          	<a class="dropdown-item" href="building.html">Building Permits</a>
+        	<a class="dropdown-item" href="building.html">Building Permits</a>
           	<a class="dropdown-item" href="codes.html">Code Violations</a>
 			<a class="dropdown-item" href="crime.html">Crime Responses</a>
 			<a class="dropdown-item" href="gfr.html">Fire and Rescue Responses</a>
-			<a class="dropdown-item" href="crashes.html">Traffic Crashes</a>
+			<a class="dropdown-item active" href="crashes.html">Traffic Crashes</a>
 			<a class="dropdown-item" href="rts.html">Transit Ridership</a>
-          	<a class="dropdown-item active" href="311.html">Service Requests</a>
+          	<a class="dropdown-item" href="311.html">Service Requests</a>
         </div>
       </li>
     </ul>
@@ -94,12 +96,12 @@
 </nav>
 <br>
 <div class="text-center">
-<h1>Online Service Requests  <button id="about-button" class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about">Read More</button></h1>
+<h1>Building Permits  <button id="about-button" class="btn btn-outline-dark btn-sm" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="about">Read More</button></h1>
 <div class="collapse" id="about">
 	  <div class="container text-left" style="width: 70%">
-			<p><strong>Description: </strong>The City of Gainesville launched an online service requests system in 2015. Community members can report issues such as potholes, graffiti and tall grass. To report an issue, download the myGNV app for iOS or Android, or go to <a target="_blank" href="https://www.cityofgainesville.org/openGNV/myGNV.aspx">myGNV.org</a>. This dashboard displays all the service requests submitted since launch. You can see them grouped by commission district, request type, and month.</p>
-		  	<p><strong>How to use: </strong>The dashboard and map are interactive. Use the slider on top to filter by date range. You can also filter requests by Commission District, Request Type, or Month by clicking on the packed bubbles, bar graph, or line graph. To select many, use Ctrl + click on Windows or Cmd + click on Mac. Click again to unselect. Hovering over the graphs will give you more information about the data. Scroll to the bottom of the page to find a link to the raw data available on dataGNV, the City of Gainesville's Open Data Portal.</p>
-		    <!--p><strong>Insights: </strong>Service requests have been going up as more community members download the app. September 2017 was the busiest month, by far, due to Hurricane Irma. District 4 has the most requests. Trash on private property is the most popular category, let's keep it clean!</p-->
+			<p><strong>Description: </strong>This dashboard shows building permits issued and closed by the City of Gainesville for all permits types from January 2010 to the most recent month.</p>
+		  	<p><strong>How to use: </strong>The dashboard is interactive. Use the slider on top to filter by date range. You can also filter building permits by Month Over Time or by Month in general by clicking on the bar graphs or line graph. To select many, use Ctrl + click on Windows or Cmd + click on Mac. Click again to unselect. Hovering over the graphs will give you more information about the data. Scroll to the bottom of the page to find a link to the raw data available on dataGNV, the City of Gainesville's Open Data Portal.</p>
+		    <!--p><strong>Insights: </strong>Traffic crashes are increasing. Almost 100 people have died on Gainesville's streets since 2011. The most dangerous time to be on the road is between Monday and Friday at 5pm. Last year the City adopted a <a target="_blank" href="https://gainesville.legistar.com/LegislationDetail.aspx?ID=3550625&GUID=8965C6BB-8A4B-4EC2-B173-A4CE750A807B">Vision Zero Resolution</a> to decrease traffic fatalities to 0 by 2040.</p-->
 	  </div>
 </div>
 <!--div class="btn-group" role="group" aria-label="dashboard or map">
@@ -107,26 +109,25 @@
   	<button id="map-button" class="btn btn-outline-dark btn-sm" type="button" data-target="#map">Map</button-->
 </div>
 <div id="dashboard">
-			  <div class="container-fluid text-center">
+			  <div class="container text-center">
 					<!-- Tableau Dashboard embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
-					<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1581462250051' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;Dashboard6&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='311ServiceRequestsDashboard&#47;Dashboard6' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;Dashboard6&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1581462250051');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='2177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+					<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1582038808663' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;BuidingPermits_15819808001520&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BuidingPermits_15819808001520&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;BuidingPermits_15819808001520&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1582038808663');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='1100px';vizElement.style.width='100%';vizElement.style.minHeight='827px';vizElement.style.maxHeight='927px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='771px';} else { vizElement.style.width='100%';vizElement.style.height='1727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 					<!-- Tableau Dashboard embed end. -->
 			  </div>
 </div>
 <!--div id="map">
 					<div class="container-fluid text-center">
 						<!-- Tableau Map embed start. Add class="col d-flex justify-content-center" at the beginning of the script as it is right now -->
-						<!--<div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1573241852446' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;MapofServiceRequests&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='311ServiceRequestsDashboard&#47;MapofServiceRequests' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;31&#47;311ServiceRequestsDashboard&#47;MapofServiceRequests&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1573241852446');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+						<!--div class="col d-flex justify-content-center" class='tableauPlaceholder' id='viz1573242765899' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrashDashboard&#47;Dashboard2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CrashDashboard&#47;Dashboard2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrashDashboard&#47;Dashboard2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1573242765899');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='727px';} else { vizElement.style.width='100%';vizElement.style.height='827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 						<!-- Tableau Map embed end. -->
-					<!--</div> -->
+					<!--/div-->
 </div>
 </div>
 <br>
 <div class="container" style="width: 80%">
-View source data: <a href="https://data.cityofgainesville.org/Community-Model/311-Service-Requests/78uv-94ar" class="btn-link">311 Service Requests</a>.
+View source data: <a href="https://data.cityofgainesville.org/Building-Development/Building-Permits/p798-x3nx" class="btn-link">Building Permits</a>.
 </div>
 <br>
-
 <footer class="text-muted bg-blue-cool-90">
 	  <br>
       <div class="container">
